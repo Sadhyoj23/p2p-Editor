@@ -50,6 +50,17 @@ npm run signaling
 # Terminal 2 — frontend dev server (localhost:5173)
 npm run dev
 ```
+```bash
+# for cross device testing - terminal 1
+cd signaling-server && npm start
+
+# Terminal 2 
+cd frontend && npm run dev -- --host
+```
+
+
+
+
 
 Open `http://localhost:5173` — a room ID is generated automatically and appended to the URL (`?room=...`). Open the same URL in a second tab (or an incognito window) to test sync.
 
